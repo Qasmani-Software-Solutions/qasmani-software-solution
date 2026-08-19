@@ -308,6 +308,18 @@ section { position: relative; z-index: 1; }
 }
 [data-animate].in-view { opacity: 1; transform: translateY(0); }
 
+/* ── App card footer ── */
+.app-card-footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.card-tag-live { background: rgba(16,185,129,.15); color: #34d399; border-color: rgba(16,185,129,.25); }
+.btn-play {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: linear-gradient(135deg, #6366f1, #06b6d4);
+  color: #fff; font-size: .8rem; font-weight: 600; letter-spacing: .02em;
+  padding: 7px 16px; border-radius: 999px; text-decoration: none;
+  transition: opacity .2s, transform .2s;
+}
+.btn-play:hover { opacity: .88; transform: translateY(-1px); }
+
 /* ── Responsive ── */
 @media (max-width: 900px) {
   .hero-content { grid-template-columns: 1fr; text-align: center; }
