@@ -7,45 +7,84 @@
   <meta name="description" content="Qasmani Software Solutions builds high-quality Android applications published on Google Play Store.">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- Ambient background blobs -->
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
   <nav class="navbar">
     <div class="container nav-container">
-      <a href="#" class="logo">Qasmani<span>Software</span></a>
+      <a href="#" class="logo">
+        <span class="logo-icon">Q</span>
+        Qasmani<span class="logo-accent">Software</span>
+      </a>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#apps">Our Apps</a></li>
+        <li><a href="#apps">Apps</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#privacy">Privacy</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
   <section id="home" class="hero">
     <div class="container hero-content">
-      <p class="hero-badge">Android App Development Studio</p>
-      <h1>We Build Apps<br>People <span class="highlight">Love to Use</span></h1>
-      <p class="hero-desc">Qasmani Software Solutions designs and develops Android applications focused on performance, simplicity, and great user experience — available on Google Play Store.</p>
-      <div class="hero-actions">
-        <a href="#apps" class="btn">View Our Apps</a>
-        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      <div class="hero-text" data-animate>
+        <p class="hero-badge">
+          <span class="badge-dot"></span>
+          Android App Development Studio
+        </p>
+        <h1>We Build Apps<br>People <span class="gradient-text">Love to Use</span></h1>
+        <p class="hero-desc">Qasmani Software Solutions designs and develops Android applications focused on performance, simplicity, and great user experience — available on Google Play Store.</p>
+        <div class="hero-actions">
+          <a href="#apps" class="btn btn-primary">
+            <span>View Our Apps</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-glass">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-visual" data-animate>
+        <div class="phone-mockup">
+          <div class="phone-screen">
+            <div class="phone-header"></div>
+            <div class="phone-block w60"></div>
+            <div class="phone-block w80"></div>
+            <div class="phone-block w40"></div>
+            <div class="phone-card-row">
+              <div class="phone-mini-card"></div>
+              <div class="phone-mini-card"></div>
+            </div>
+            <div class="phone-block w70"></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="apps" class="apps">
     <div class="container">
+      <p class="section-label">Portfolio</p>
       <h2 class="section-title">Our Apps</h2>
       <p class="section-subtitle">Applications we've built and published on Google Play Store.</p>
       <div class="apps-grid">
-        <div class="app-card app-placeholder">
-          <div class="app-icon-placeholder">&#128241;</div>
+        <div class="glass-card app-card" data-animate>
+          <div class="app-icon-wrap">
+            <div class="app-icon">&#128241;</div>
+          </div>
           <h3>Coming Soon</h3>
           <p>Our first app is currently in development and will be available on Google Play Store soon. Stay tuned!</p>
+          <span class="card-tag">In Development</span>
         </div>
       </div>
     </div>
@@ -53,35 +92,36 @@
 
   <section id="about" class="about">
     <div class="container">
+      <p class="section-label">Who We Are</p>
       <h2 class="section-title">About Us</h2>
       <div class="about-grid">
-        <div class="about-text">
+        <div class="about-text" data-animate>
           <p>Qasmani Software Solutions is a software development studio focused on building Android applications. We are committed to creating apps that are well-designed, reliable, and useful.</p>
           <p>Our team follows modern development practices and prioritizes user privacy, clean interfaces, and smooth performance in every product we ship.</p>
         </div>
-        <div class="values-list">
-          <div class="value-item">
+        <div class="values-list" data-animate>
+          <div class="glass-card value-item">
             <span class="value-icon">&#9889;</span>
             <div>
               <h4>Performance First</h4>
               <p>Lightweight apps optimized for speed and battery efficiency.</p>
             </div>
           </div>
-          <div class="value-item">
+          <div class="glass-card value-item">
             <span class="value-icon">&#128274;</span>
             <div>
               <h4>User Privacy</h4>
               <p>We respect user data and follow Google Play's privacy guidelines.</p>
             </div>
           </div>
-          <div class="value-item">
+          <div class="glass-card value-item">
             <span class="value-icon">&#127912;</span>
             <div>
               <h4>Clean Design</h4>
               <p>Intuitive interfaces built with Material Design principles.</p>
             </div>
           </div>
-          <div class="value-item">
+          <div class="glass-card value-item">
             <span class="value-icon">&#128736;&#65039;</span>
             <div>
               <h4>Active Maintenance</h4>
@@ -95,8 +135,9 @@
 
   <section id="privacy" class="privacy">
     <div class="container">
+      <p class="section-label">Legal</p>
       <h2 class="section-title">Privacy Policy</h2>
-      <div class="privacy-content">
+      <div class="glass-card privacy-card" data-animate>
         <p>At Qasmani Software Solutions, we take user privacy seriously. Here is a summary of our practices:</p>
         <ul>
           <li>We do not collect personal information unless explicitly required for app functionality.</li>
@@ -111,13 +152,28 @@
 
   <section id="contact" class="contact">
     <div class="container">
+      <p class="section-label">Reach Out</p>
       <h2 class="section-title">Contact Us</h2>
       <p class="section-subtitle">Have a question, feedback, or support request? We'd love to hear from you.</p>
-      <form class="contact-form" onsubmit="event.preventDefault(); document.getElementById('form-msg').textContent='Thank you! We will get back to you soon.'; this.reset();">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
+      <form class="glass-card contact-form" data-animate onsubmit="event.preventDefault(); document.getElementById('form-msg').textContent='Thank you! We will get back to you soon.'; this.reset();">
+        <div class="form-row">
+          <div class="input-group">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="John Doe" required>
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="john@example.com" required>
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Tell us about your project or question..." rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          <span>Send Message</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M14 2L7 9M14 2l-4 12-3-5M14 2L2 6l5 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
         <p id="form-msg" class="form-msg"></p>
       </form>
     </div>
@@ -125,17 +181,37 @@
 
   <footer class="footer">
     <div class="container footer-content">
-      <p>&copy; 2026 Qasmani Software Solutions. All rights reserved.</p>
+      <a href="#" class="footer-logo">
+        <span class="logo-icon">Q</span>
+        Qasmani Software Solutions
+      </a>
       <div class="footer-links">
         <a href="#privacy">Privacy Policy</a>
         <a href="#contact">Contact</a>
       </div>
+      <p class="footer-copy">&copy; 2026 Qasmani Software Solutions. All rights reserved.</p>
     </div>
   </footer>
 
   <script>
-    document.querySelector('.nav-toggle').addEventListener('click', () => {
-      document.querySelector('.nav-links').classList.toggle('open');
+    // Mobile menu toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('active');
+      links.classList.toggle('open');
+    });
+
+    // Scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in-view'); });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+
+    // Navbar background on scroll
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
     });
   </script>
 </body>
